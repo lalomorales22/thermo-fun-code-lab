@@ -1,5 +1,6 @@
 
 # Thermo Fun Code Lab 🔥💻
+<img width="1391" alt="Screenshot 2025-06-15 at 1 50 08 AM" src="https://github.com/user-attachments/assets/c4fab30d-65fd-42e0-a664-f02cbca08d8f" />
 
 An interactive thermodynamic computing engineering course that makes learning thermal management in computing systems fun and engaging through hands-on tutorials, visual simulations, and AI-powered assistance.
 
