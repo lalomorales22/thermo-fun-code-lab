@@ -106,6 +106,12 @@ const Index = () => {
           </div>
         </div>
       </div>
+
+      {/* AI Assistant Sidebar */}
+      <AIAssistant 
+        isOpen={isAIAssistantOpen} 
+        onClose={() => setIsAIAssistantOpen(false)} 
+      />
     </div>
   );
 };
