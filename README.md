@@ -1,73 +1,154 @@
-# Welcome to your Lovable project
 
-## Project info
+# Thermo Fun Code Lab 🔥💻
 
-**URL**: https://lovable.dev/projects/4311c5ee-0985-476f-9592-9519f770449b
+An interactive thermodynamic computing engineering course that makes learning thermal management in computing systems fun and engaging through hands-on tutorials, visual simulations, and AI-powered assistance.
 
-## How can I edit this code?
+## 🌟 What is Thermo Fun Code Lab?
 
-There are several ways of editing your application.
+Thermo Fun Code Lab is a comprehensive educational platform designed to teach thermodynamic computing concepts through:
 
-**Use Lovable**
+- **Interactive Learning Modules**: Step-by-step courses covering heat transfer, thermal resistance, cooling systems, and more
+- **Visual Simulations**: Real-time heat transfer visualizations and thermal modeling
+- **Code Playground**: Interactive editors for practicing thermal calculations and simulations
+- **AI Assistant**: Claude 3.5 Sonnet integration for instant help with thermodynamic concepts
+- **Progress Tracking**: Monitor your learning journey through the course modules
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/4311c5ee-0985-476f-9592-9519f770449b) and start prompting.
+## 🎯 Who is this for?
 
-Changes made via Lovable will be committed automatically to this repo.
+- Engineering students studying thermal management
+- Computer science students interested in hardware optimization
+- Professionals working with data centers and cooling systems
+- Anyone curious about the thermal challenges in modern computing
 
-**Use your preferred IDE**
+## 🚀 Features
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### 📚 Course Modules
+- **Fundamentals**: Basic heat transfer principles
+- **Thermal Resistance**: Understanding thermal pathways
+- **Heat Sinks**: Design and optimization
+- **Thermal Interface Materials**: Properties and applications
+- **Fan Cooling**: Airflow dynamics and optimization
+- **Liquid Cooling**: Advanced cooling solutions
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### 🎮 Interactive Elements
+- Real-time heat transfer visualizations
+- Interactive code editors with live feedback
+- Progress tracking and module completion
+- Responsive design for all devices
 
-Follow these steps:
+### 🤖 AI Assistant
+- Powered by Claude 3.5 Sonnet
+- Expert guidance on thermodynamic concepts
+- Real-time Q&A support
+- Personalized learning assistance
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## 🛠️ Technologies Used
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+- **Frontend**: React 18 with TypeScript
+- **Styling**: Tailwind CSS
+- **UI Components**: Shadcn/ui
+- **Build Tool**: Vite
+- **Charts**: Recharts
+- **Icons**: Lucide React
+- **AI Integration**: Anthropic Claude API
 
-# Step 3: Install the necessary dependencies.
-npm i
+## 📋 Prerequisites
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+- Node.js (version 16 or higher)
+- npm or yarn package manager
+- Anthropic API key (for AI assistant functionality)
+
+## 🏃‍♂️ Getting Started
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/lalomorales22/thermo-fun-code-lab.git
+cd thermo-fun-code-lab
 ```
 
-**Edit a file directly in GitHub**
+### 2. Install Dependencies
+```bash
+npm install
+# or
+yarn install
+```
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### 3. Start Development Server
+```bash
+npm run dev
+# or
+yarn dev
+```
 
-**Use GitHub Codespaces**
+### 4. Open the Application
+Navigate to `http://localhost:5173` in your web browser to start learning!
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 🔑 AI Assistant Setup
 
-## What technologies are used for this project?
+To use the AI assistant feature:
 
-This project is built with:
+1. Get an Anthropic API key from [Anthropic Console](https://console.anthropic.com/)
+2. Click the "AI Assistant" button in the app
+3. Enter your API key when prompted
+4. Start asking questions about thermodynamic computing!
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Your API key is stored locally in your browser and never sent to our servers.
 
-## How can I deploy this project?
+## 📖 How to Use
 
-Simply open [Lovable](https://lovable.dev/projects/4311c5ee-0985-476f-9592-9519f770449b) and click on Share -> Publish.
+1. **Start Learning**: Begin with the first module (Fundamentals of Heat Transfer)
+2. **Progress Through Modules**: Complete each module to unlock the next one
+3. **Use Visualizations**: Interact with heat transfer simulations
+4. **Practice Coding**: Try the interactive code examples
+5. **Ask Questions**: Use the AI assistant for help with concepts
+6. **Track Progress**: Monitor your completion status
 
-## Can I connect a custom domain to my Lovable project?
+## 🏗️ Project Structure
 
-Yes, you can!
+```
+src/
+├── components/          # Reusable UI components
+│   ├── ui/             # Shadcn UI components
+│   ├── AIAssistant.tsx # AI chat interface
+│   ├── CourseHeader.tsx
+│   ├── ModuleCard.tsx
+│   └── ...
+├── data/               # Course content and data
+├── pages/              # Main application pages
+├── types/              # TypeScript type definitions
+└── lib/                # Utility functions
+```
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## 🤝 Contributing
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+We welcome contributions! Please feel free to:
+
+- Report bugs or issues
+- Suggest new features or improvements
+- Submit pull requests
+- Share feedback on the learning experience
+
+## 📄 License
+
+This project is open source and available under the MIT License.
+
+## 🔗 Links
+
+- **Live Demo**: [Deployed on Lovable](https://lovable.dev/projects/4311c5ee-0985-476f-9592-9519f770449b)
+- **GitHub Repository**: https://github.com/lalomorales22/thermo-fun-code-lab.git
+- **Anthropic API**: https://www.anthropic.com/api
+
+## 🆘 Support
+
+If you encounter any issues or have questions:
+
+1. Check the existing GitHub issues
+2. Use the AI assistant within the app
+3. Create a new issue with detailed information
+4. Contact the maintainers
+
+---
+
+**Happy Learning! 🎓🔥**
+
+Transform your understanding of thermodynamic computing with hands-on, interactive education.
