@@ -1,15 +1,18 @@
-
 import React, { useState } from 'react';
 import { CourseHeader } from '@/components/CourseHeader';
 import { ModuleCard } from '@/components/ModuleCard';
 import { InteractiveEditor } from '@/components/InteractiveEditor';
 import { HeatTransferViz } from '@/components/HeatTransferViz';
 import { ProgressTracker } from '@/components/ProgressTracker';
+import { AIAssistant } from '@/components/AIAssistant';
 import { courseModules } from '@/data/courseData';
+import { MessageCircle } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 
 const Index = () => {
   const [selectedModule, setSelectedModule] = useState(courseModules[0]);
   const [completedModules, setCompletedModules] = useState<string[]>([]);
+  const [isAIAssistantOpen, setIsAIAssistantOpen] = useState(false);
 
   const handleModuleComplete = (moduleId: string) => {
     if (!completedModules.includes(moduleId)) {
@@ -21,7 +24,22 @@ const Index = () => {
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-cyan-900">
       <CourseHeader />
       
-      <div className="container mx-auto px-4 py-8">
+      {/* AI Assistant Toggle Button */}
+      <div className="fixed top-20 right-4 z-40">
+        <Button
+          onClick={() => setIsAIAssistantOpen(!isAIAssistantOpen)}
+          className={`bg-cyan-500 hover:bg-cyan-400 text-white shadow-lg transition-all duration-300 ${
+            isAIAssistantOpen ? 'translate-x-[-384px]' : ''
+          }`}
+        >
+          <MessageCircle className="h-5 w-5 mr-2" />
+          AI Assistant
+        </Button>
+      </div>
+      
+      <div className={`container mx-auto px-4 py-8 transition-all duration-300 ${
+        isAIAssistantOpen ? 'mr-96' : ''
+      }`}>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Course Modules Sidebar */}
           <div className="lg:col-span-1 space-y-6">
